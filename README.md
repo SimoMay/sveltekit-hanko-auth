@@ -1,28 +1,38 @@
-# create-svelte
+# SvelteKit-Hanko-Auth
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+A SvelteKit starter template integrated with [`Hanko.io Auth`](https://www.hanko.io/).
 
-## Creating a project
+Hanko.io is great open source alternative if you want to go **passowrdless** with your auth (Passkeys, Passcodes, Security Keys, OAuth, ...).
 
-If you're seeing this, you've probably already done this step. Congrats!
+The template uses both [`<hanko-auth>`] & [`<hanko-profile>`] web componenets for login and profile.
+
+## Getting started
+
+To get started with SvelteKit-Hanko-Auth, first clone the repo:
 
 ```bash
-# create a new project in the current directory
-npm create svelte@latest
+git clone https://github.com/SimoMay/sveltekit-hanko-auth.git
+```
 
-# create a new project in my-app
-npm create svelte@latest my-app
+Then install the dependencies:
+
+```bash
+cd sveltekit-hanko-auth
+pnpm install
+```
+
+Replace the example env file:
+
+```bash
+mv .env.example .env
 ```
 
 ## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Start a development server:
 
 ```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+pnpm dev
 ```
 
 ## Building
@@ -30,9 +40,9 @@ npm run dev -- --open
 To create a production version of your app:
 
 ```bash
-npm run build
+pnpm build
 ```
 
-You can preview the production build with `npm run preview`.
+You can preview the production build with `pnpm preview`.
 
 > To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
